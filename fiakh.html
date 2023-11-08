@@ -18,7 +18,7 @@
     }
     
 
-    nav{
+    .nav{
         background-color:#f8f5f5;
         color: #2a5a86;
         display: flex;
@@ -60,6 +60,44 @@
     padding: 10px;
     }
 
+    .logo {
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+    }
+
+    .navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #2A5A86;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.content {
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #2A5A86;
+}
+    
 </style>
 </head>
 <body>
